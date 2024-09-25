@@ -1,0 +1,105 @@
+$green: #7ca48c;
+$main: #fefaef;
+$main-dim: #6666662a;
+$text-color:#585656;
+$brown: #b05d3d;
+$button-dim: #e6c4a5bb;
+
+.thumbnail-wrapper{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin:10px;
+    box-shadow: $green 0px 0px;
+
+    &:hover{
+        animation: focusQuiz;
+        animation-duration:0.3s;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+    }
+    & .thumbnail-content{
+        display: flex;
+        flex-direction: column;
+        & .thumbnail-title{
+            font-size: 20px;
+            font-weight:650;
+            margin: 5px;
+            color: $text-color;
+            margin: 0 auto;
+        }
+        & .thumbnail-image{
+            width: 100px;
+            padding-top:10px;
+            margin: 0 auto;
+        }
+        & .thumbnail-pen{
+            width: 20px;
+            position: relative;
+            left:20px;
+            cursor:pointer;
+            &:hover{
+                animation: focusPlay;
+                animation-duration:0.3s;
+                animation-fill-mode: forwards;
+            }
+        }
+        & .thumbnail-category{
+            font-size: 18px;
+            font-weight:650;
+            margin: 5px;
+            color: $text-color;
+        }
+        & .thumbnail-Tags{
+            width: 100%;
+            white-space: wrap;
+            font-size: 15px;
+            font-weight:650;
+            margin: 5px;
+            color: $text-color;
+        }
+        & .thumbnail-AccessQuiz{
+            width: 100%;
+            border-top: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .thumbnail-AccessQuiz-lefttoplay{
+                font-size: 18px;
+                font-weight:650;
+                margin: 5px;
+                color: $text-color;
+                caret-color: rgba(0,0,0,0);
+            }
+            & .thumbnail-AccessQuiz-play{
+                caret-color: rgba(0,0,0,0);
+            }
+            &:hover{
+                animation: focusPlay;
+                animation-duration:0.6s;
+                animation-fill-mode: forwards;
+                cursor: pointer
+            }
+        }
+    }
+}
+@keyframes focusQuiz{
+    100%{
+        transform: scale(1.1);
+        box-shadow: $green 7px 7px;
+        
+    }
+}
+@keyframes focusPlay{
+    0%{
+        border: 1px solid black; 
+ 
+     }
+     100%{
+        background-color: $button-dim;
+        transform: scale(1.1);
+        border: 1px solid black; 
+     }
+}
