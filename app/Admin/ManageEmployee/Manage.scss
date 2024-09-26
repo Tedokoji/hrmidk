@@ -1,0 +1,60 @@
+$green: #7ca48c;
+$main: #fefaef;
+$main-dim: #6666662a;
+$text-color: #585656;
+$brown: #b05d3d;
+$button-dim: #e6c4a5bb;
+
+
+.bordered-info-em{
+    border: 1px solid black;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  min-height:50px;
+  display:flex;
+  flex-direction: row;
+  & .leftside{
+    border: 1px solid black;
+    min-height:50px;
+    flex:4;
+    display: flex;
+    flex-direction: column;
+    & .pfp{
+        width:200px;
+    }
+
+  }
+  & .rightside{
+    border: 1px solid black;
+    min-height:50px;
+    flex:1
+
+  }
+  
+        &:hover{
+            animation: focusQuiz;
+            animation-duration:0.3s;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+        }
+}
+
+@keyframes focusQuiz{
+    100%{
+        transform: scale(1.05);
+        box-shadow: $green 7px 7px;
+        
+    }
+}
+@keyframes focusPlay{
+    0%{
+        border: 1px solid black; 
+ 
+     }
+     100%{
+        background-color: $button-dim;
+        transform: scale(1.1);
+        border: 1px solid black; 
+     }
+}

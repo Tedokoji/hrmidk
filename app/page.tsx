@@ -57,7 +57,7 @@ export default function Home() {
               className={`password`}
             />
             <Button text="Sign In" onClick={() => {
-              router.push('/UserPage')
+              router.push('/User')
 
             }} />
           </>
@@ -85,7 +85,7 @@ export default function Home() {
             <Button
               text="Sign In"
               onClick={() => {
-              router.push('/AdminPage')
+              router.push('/Admin')
               }}
             />
           </>

@@ -51,7 +51,7 @@ const Listofcontestantasjdhnaksjd = async () => {
               <div className="infowrapper">
                 <Image className="info-image" 
                 alt="icon" src={phoneicon} />
-
+                <span>{user.phone}</span>
               </div>
             </Grade>
           </li>

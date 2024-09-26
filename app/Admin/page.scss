@@ -1,0 +1,157 @@
+$green: #7ca48c;
+$main: #fefaef;
+$main-dim: #6666662a;
+$text-color: #585656;
+$brown: #b05d3d;
+$button-dim: #e6c4a5bb;
+.Banner{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    flex-grow:1;
+    width:100%;
+    font-size: 20px;
+    font-weight:650;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: $text-color;
+    & .title{
+        font-size: 20px;
+        font-weight: bold;
+        height:40px;
+        margin:10px;overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        border: 1px solid black;
+        padding: 5px;
+        box-shadow: $green 5px 2px;
+        color: $text-color;
+    &:hover {
+        overflow: visible;
+        text-overflow: initial;
+      }
+    }
+}
+.bordered-span-tag{
+  border: 1px solid black;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  height:50px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: $green 5px 2px;
+        color: $text-color;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: default;
+}
+.MainUserPageWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  
+  & .borderedright {
+    width:20vw;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    flex: 1;
+    box-shadow: $green 5px 5px;
+    background-color: #f2f2f2;
+    border: 1px solid $brown;
+    border-radius: 8px;
+  }
+  & .bordered {   
+    width: 70vw;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-top:10px;
+    flex:3;
+    box-shadow: $green 5px 5px;
+    background-color: #f2f2f2;
+    border: 1px solid $brown;
+    border-radius: 8px;
+
+    & .innerbordered {
+      display: flex;
+      flex-direction: row;
+      
+      flex-wrap: wrap;
+      flex-grow: 1;
+    }
+  }
+}
+
+.dashnav {
+  width: 100vw;
+  height: 50px;
+  border: 1px solid $main-dim;
+  background-color: $main;
+  display: flex;
+  justify-content: flex-start;
+  caret-color: rgba(0, 0, 0, 0);
+  align-items: center;
+
+  & .profile-container {
+    width: 100px;
+    margin: 5px;
+    & .pro-avt {
+      border-radius: 50%;
+      width: 40px;
+      border: 2px solid $text-color;
+      cursor: pointer;
+    }
+    flex: 2;
+  }
+  & .profile-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.671);
+    flex: 5;
+  }
+  & .expandnav {
+    flex: 1;
+    transform: scale(0.75);
+    cursor: pointer;
+  }
+}
+.navmenu {
+  border: 2px solid $text-color;
+  border-radius: 5px;
+  background-color: white;
+  width: 100vw;
+  z-index: 100;
+  position: fixed;
+  & .nav-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-color;
+    box-shadow: $green 2px 2px;
+    margin: 10px;
+    padding: 5px;
+    width: 100vw;
+    &:hover {
+      background-color: $button-dim;
+      cursor: pointer;
+      animation: focusNav;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+@keyframes focusNav {
+  100% {
+    box-shadow: $green 5px 5px;
+    border: 1px solid $brown;
+  }
+}
