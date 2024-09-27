@@ -7,6 +7,7 @@ import defaultpic from "../../public/staticfiles/defaultpic.png";
 import addicon from "../../public/staticfiles/iconAddEmployee.png";
 import findicon from "../../public/staticfiles/findicon.png";
 import accIcon from "../../public/staticfiles/IconAcceptApps.png";
+import traningIcon from "../../public/staticfiles/trainingIcon.png";
 import Dash from "./Dash";
 import Thumbnail from "./Thumbnail";
 import { useRouter } from "next/navigation";
@@ -28,7 +29,7 @@ const UserPage = () => {
             <p className="bordered-span-tag">Quick Acess</p>
             <div className="innerbordered">
               <Thumbnail
-                title="Helldiver Enlistment"
+                title="Interview Applications"
                 src={findicon}
                 onClick={() => {
                   router.push("/Admin/Findidk");
@@ -38,13 +39,17 @@ const UserPage = () => {
               onClick={()=>{
                 router.push('/Admin/ManageEmployee');
               }}/>
-              <Thumbnail title="Review Applications" src={accIcon}
+              <Thumbnail title="Review Requests" src={accIcon}
               onClick={()=>{
                 router.push('/Admin/ManageEmployee');
 
               }} />
-              <Thumbnail title="AddEmployee" src={addicon} />
-              <Thumbnail title="AddEmployee" src={addicon} />
+              <Thumbnail title="Training" src={traningIcon}
+              onClick={()=>{
+                router.push('/Admin/Training');
+
+              }} />
+              
             </div>
           </div>
         </div>

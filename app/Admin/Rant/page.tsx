@@ -28,7 +28,9 @@ const rant = () => {
          <h1>
           update, alright i gotta be serious. i gotta learn from the best, from you hehe. 
          </h1>
-      <h1>Update: i fucked up the naming again, and too lazy to refractorasdjkhaisdukhj imma keep the names but only change the titles and icons</h1>
+      <h1>Update: i fucked up the naming again, and too lazy to refractorasdjkhaisdukhj imma keep the names but only 
+        change the titles and icons</h1>
+        <h1>Update: box shadow overused lmao</h1>
       </>
   )
 }
