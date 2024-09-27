@@ -44,7 +44,7 @@ const Dash = () => {
             className="nav-text"
             onClick={() => {
               setNav(false);
-              router.push('/Admin/Rant')
+              
             }}
           >
             -Don't click this

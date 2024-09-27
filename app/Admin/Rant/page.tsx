@@ -24,13 +24,11 @@ const rant = () => {
          <h2>update: i'm just gonna do my own thing ehe i dunno nextjs yet. Server components and client side should be more clear. i shouldve plan it firsthand.
           if you give me a month i'll be more knowledgeable about nextjs and make a proper project. my bad
          </h2>
-         <h1>
-          Oh yeah, if this just to test my programming skill. suggest looking at my english test i made before my first year in college? i have CRUD there idk i barely know what to code what does hrm require lol
-         </h1>
+         
          <h1>
           update, alright i gotta be serious. i gotta learn from the best, from you hehe. 
          </h1>
-
+      <h1>Update: i fucked up the naming again, and too lazy to refractorasdjkhaisdukhj imma keep the names but only change the titles and icons</h1>
       </>
   )
 }

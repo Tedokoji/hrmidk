@@ -20,29 +20,40 @@ const ManageEm = () => {
             <div className="bordered-info-em">
               <div className="leftside">
                 <Image className="pfp" alt="icon" src={pfp}/>
+                <div className="info-card-title"> 
+                  Joe Biladen
+                </div>
+                <div className="info-card-title"> 
+                  on Leave: reason, got blown up
+                </div>
+                
               </div>
               <div className="rightside">
+              <Grade title={"View Profile"} className={""}></Grade>
+              <Grade title={"Confirm Application"} className={""}></Grade>
+              <Grade title={"Direct Message"} className={""}></Grade>
 
               </div>
             </div>
-           
             <div className="bordered-info-em">
               <div className="leftside">
                 <Image className="pfp" alt="icon" src={pfp}/>
+                <div className="info-card-title"> 
+                  Joe Biladen
+                </div>
+                <div className="info-card-title"> 
+                  on Leave: reason, got blown up
+                </div>
+                
               </div>
               <div className="rightside">
+              <Grade title={"View Profile"} className={""}></Grade>
+              <Grade title={"Confirm Application"} className={""}></Grade>
+              <Grade title={"Direct Message"} className={""}></Grade>
 
               </div>
             </div>
-
-            <div className="bordered-info-em">
-              <div className="leftside">
-                <Image className="pfp" alt="icon" src={pfp}/>
-              </div>
-              <div className="rightside">
-                on Leave
-              </div>
-            </div>
+          
             
           </div>
         </div>

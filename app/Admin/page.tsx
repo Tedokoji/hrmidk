@@ -6,6 +6,7 @@ import "./page.scss";
 import defaultpic from "../../public/staticfiles/defaultpic.png";
 import addicon from "../../public/staticfiles/iconAddEmployee.png";
 import findicon from "../../public/staticfiles/findicon.png";
+import accIcon from "../../public/staticfiles/IconAcceptApps.png";
 import Dash from "./Dash";
 import Thumbnail from "./Thumbnail";
 import { useRouter } from "next/navigation";
@@ -17,7 +18,7 @@ const UserPage = () => {
     <>
     <div className="Banner">
       <div className="title">
-        User Main Page i suppose
+        Quick Makeshift Website Admin Main page
 
       </div>
     </div>
@@ -27,7 +28,7 @@ const UserPage = () => {
             <p className="bordered-span-tag">Quick Acess</p>
             <div className="innerbordered">
               <Thumbnail
-                title="Review Applications"
+                title="Helldiver Enlistment"
                 src={findicon}
                 onClick={() => {
                   router.push("/Admin/Findidk");
@@ -37,7 +38,11 @@ const UserPage = () => {
               onClick={()=>{
                 router.push('/Admin/ManageEmployee');
               }}/>
-              <Thumbnail title="AddEmployee" src={addicon} />
+              <Thumbnail title="Review Applications" src={accIcon}
+              onClick={()=>{
+                router.push('/Admin/ManageEmployee');
+
+              }} />
               <Thumbnail title="AddEmployee" src={addicon} />
               <Thumbnail title="AddEmployee" src={addicon} />
             </div>
@@ -56,6 +61,7 @@ const UserPage = () => {
           <Grade title={"For Democracy"} className={""}></Grade>
         </div>
       </div>
+      
     </>
   );
 };
