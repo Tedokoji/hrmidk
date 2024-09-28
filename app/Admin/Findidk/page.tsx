@@ -1,4 +1,7 @@
+//i hate using this everytime, but idk any way else, teach me your ways senpai
 import BackButton from "@/public/Buttons/BackButton";
+
+
 import Button from "@/public/Buttons/Button";
 import Grade from "./Grade";
 import React from "react";
@@ -6,9 +9,10 @@ import Image from "next/image";
 import Thumbnail from "../Thumbnail";
 import adressicon from "../../../public/staticfiles/adressicon.png";
 import phoneicon from "../../../public/staticfiles/phoneicon.png";
+import ButtonWithId from "./ButtonWithId";
 // interfaces.ts
 
-interface Person {
+export interface Person {
   id: number;
   name: string;
   username: string;
@@ -41,7 +45,9 @@ const Listofcontestantasjdhnaksjd = async () => {
       <ul>
         {users.map((user) => (
           <li key={user.id}>
-            <Grade title={user.name} className={""}>
+            <Grade title={user.name} className={""}
+
+            >
               <div className="infowrapper">
                 
                 <Image className="info-image"
@@ -52,7 +58,9 @@ const Listofcontestantasjdhnaksjd = async () => {
                 <Image className="info-image" 
                 alt="icon" src={phoneicon} />
                 <span>{user.phone}</span>
+
               </div>
+              <ButtonWithId id={user.id}></ButtonWithId>
             </Grade>
           </li>
         ))}

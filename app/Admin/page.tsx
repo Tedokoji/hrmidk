@@ -37,7 +37,7 @@ const UserPage = () => {
               />
               <Thumbnail title="Manage Employees" src={addicon} 
               onClick={()=>{
-                router.push('/Admin/ManageEmployee');
+                router.push('/Admin/RealEmMangage');
               }}/>
               <Thumbnail title="Review Requests" src={accIcon}
               onClick={()=>{
