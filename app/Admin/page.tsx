@@ -44,11 +44,11 @@ const UserPage = () => {
                 router.push('/Admin/ManageEmployee');
 
               }} />
-              <Thumbnail title="Training" src={traningIcon}
+              <a href="https://silly-curie-9842ed.netlify.app"><Thumbnail title="Training" src={traningIcon}
               onClick={()=>{
-                router.push('/Admin/Training');
-
-              }} />
+                //router.push('/Admin/Training');
+//
+              }} /></a>
               
             </div>
           </div>
